@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "aebfd5ff-bc62-4d91-8e40-59b2b3f83a6b",
+		"name": "TestMockServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getmockdata",
+			"id": "b9e1e966-0438-4a0e-8d60-6a0bd8736359",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "header",
+						"value": "value2",
+						"type": "text"
+					},
+					{
+						"key": "x-mock-match-request-headers",
+						"value": "header",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "{{url}}/getmockdata/get"
+			},
+			"response": [
+				{
+					"id": "00018485-b4df-48c1-8d82-ddcb73ed1ff3",
+					"name": "getmockheader1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "value1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{url}}/getmockdata/get"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "resposnseHeader",
+							"value": "resvalue1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/atom+xml",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\r\n    \"message\": \"mockHeaderValue1\"\r\n}"
+				},
+				{
+					"id": "e737c6e1-db62-43df-876c-e4f44d876fec",
+					"name": "getmockheader2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "value2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{url}}/getmockdata/get"
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "responseHeader",
+							"value": "resValue2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contetn-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\r\n    \"msg\": \"responseValue2\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "getmockdata Copy",
+			"id": "4c88839b-541c-455c-9840-968c5c339aec",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "header",
+						"value": "value2",
+						"type": "text"
+					},
+					{
+						"key": "x-mock-match-request-headers",
+						"value": "header",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "{{url}}/getmockdata/get"
+			},
+			"response": [
+				{
+					"id": "b7943329-c65c-45c1-bcf2-cf9e961cbd1b",
+					"name": "getmockheader1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "value1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{url}}/getmockdata/get"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "resposnseHeader",
+							"value": "resvalue1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/atom+xml",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\r\n    \"message\": \"mockHeaderValue1\"\r\n}"
+				},
+				{
+					"id": "7449521f-a103-4cfe-a5d5-b51d3a6da983",
+					"name": "getmockheader2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "value2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{url}}/getmockdata/get"
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "responseHeader",
+							"value": "resValue2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Contetn-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\r\n    \"msg\": \"responseValue2\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "MockJsonArraylist",
+			"id": "bed7a6a5-a37c-4f01-87f5-feb3e7c5b00d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "x-mock-match-request-body",
+						"value": "true",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"id\":1001,\"type\":\"none\"},\r\n    {\"id\":1002,\"type\":\"glazed\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://e9c7270b-f775-4f58-a2e1-68f8784506ba.mock.pstmn.io/post"
+			},
+			"response": [
+				{
+					"id": "46baed47-e321-46a0-8525-1d0538ac46c8",
+					"name": "MockJsonArraylist",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "x-mock-match-request-body",
+								"value": "true",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\": \"1001\",\r\n        \"type\": \"none\"\r\n    },\r\n    {\r\n        \"id\": \"1002\",\r\n        \"type\": \"glazed\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/post"
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\r\n    \"msg\":\"Success\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "SimplePOJOExample",
+			"id": "893bfb54-4979-4647-9af2-e8e4aa1180ef",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/postSimpleJson"
+			},
+			"response": [
+				{
+					"id": "7319f71d-2bd7-4db8-992a-f2a59c703280",
+					"name": "SimplePOJOExample",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/postSimpleJson"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://e9c7270b-f775-4f58-a2e1-68f8784506ba.mock.pstmn.io"
+		}
+	]
+}
